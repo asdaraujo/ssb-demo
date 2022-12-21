@@ -1,0 +1,10 @@
+{
+  "id" : "258c82284874427f8d3ac07596541563",
+  "name" : "local-kafka",
+  "type" : "kafka",
+  "properties" : {
+    "brokers" : "cdp.34.193.77.120.nip.io:9092",
+    "protocol" : "plaintext",
+    "mechanism" : "KERBEROS"
+  }
+}
