@@ -1,0 +1,65 @@
+{
+  "job_name" : "ecstatic_darwin",
+  "api_endpoints" : [ {
+    "endpoint" : "date",
+    "dynamic_parameters" : [ ],
+    "code" : "select \"col_str\", \"col_int\", \"col_ts\" from mv_ffffffff_ecstatic_darwin",
+    "bind_values" : [ ],
+    "builder_data" : {
+      "rules" : {
+        "condition" : "AND",
+        "rules" : [ ]
+      },
+      "selectedColumns" : [ {
+        "index" : 1,
+        "name" : "col_str",
+        "alias" : "col_str",
+        "expr" : null,
+        "typeName" : "VARCHAR",
+        "primaryKey" : false,
+        "watermark" : false
+      }, {
+        "index" : 2,
+        "name" : "col_int",
+        "alias" : "col_int",
+        "expr" : null,
+        "typeName" : "INTEGER",
+        "primaryKey" : false,
+        "watermark" : false
+      }, {
+        "index" : 3,
+        "name" : "col_ts",
+        "alias" : "col_ts",
+        "expr" : null,
+        "typeName" : "TIMESTAMP_WITHOUT_TIME_ZONE",
+        "primaryKey" : false,
+        "watermark" : false
+      } ]
+    }
+  } ],
+  "sql" : "select * from dg",
+  "mv_config" : {
+    "name" : "ecstatic_darwin",
+    "retention" : 300,
+    "min_row_retention_count" : 0,
+    "recreate" : true,
+    "key_column_name" : "col_int",
+    "column_indices_disabled" : false,
+    "indexed_columns" : [ ],
+    "not_indexed_columns" : [ ],
+    "api_key" : "df582550-3bad-4b4b-abfd-f3270964353b",
+    "ignore_nulls" : true,
+    "require_restart" : false,
+    "batch_size" : 0,
+    "enabled" : true
+  },
+  "runtime_config" : {
+    "execution_mode" : "SESSION",
+    "parallelism" : 1,
+    "sample_interval" : 1000,
+    "sample_count" : 100,
+    "window_size" : 100,
+    "start_with_savepoint" : false,
+    "log_config" : null
+  }
+}
