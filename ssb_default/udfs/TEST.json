@@ -1,0 +1,8 @@
+{
+  "name" : "TEST",
+  "language" : "PYTHON",
+  "output_type" : "PYTHON_INFERRED",
+  "input_types" : [ ],
+  "code" : "from pyflink.table.udf import udf\nfrom pyflink.table import DataTypes\n\n@udf(result_type=DataTypes.BIGINT())\ndef udf_function(i, j):\n return i + j",
+  "java_class_name" : "TEST.udf_function"
+}
